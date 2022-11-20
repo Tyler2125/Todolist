@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap");
+/* General tags */
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #faf7f0;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  transition: 1s;
+}
+a {
+  color: inherit;
+}
+button:hover {
+  cursor: pointer;
+}
+li {
+  background-color: inherit;
+  color: inherit;
+  box-shadow: 2px 5px lightgrey;
+  border-radius: 5px;
+  list-style: none;
+  align-items: center;
+  padding: 5%;
+  margin-bottom: 1%;
+  transition: all 0.5 ease;
+}
+input {
+  background-color: #faf7f0;
+  color: #000000;
+  padding: 1%;
+  border: solid 1px #000000;
+  border-radius: 5px;
+  width: 60%;
+}
+footer {
+  margin-top: 5%;
+}
+/* ID's */
+#app {
+  width: 25%;
+  margin: auto;
+  align-items: center;
+  padding: 8%;
+  background: inherit;
+  border-radius: 10px;
+  box-shadow: 8px 8px 5px #d8d8d8;
+}
+
+#dark {
+  background: inherit;
+  border: none;
+  margin-top: 1%;
+  color: #748da6;
+  margin-bottom: 2%;
+}
+#submit {
+  background-color: #3f3b6c;
+  box-shadow: 2px 5px lightgrey;
+  color: #f0ebe3;
+  border: none;
+  border-radius: 10px;
+  padding: 3%;
+  font-size: 1em;
+}
+#clear {
+  background-color: #3f3b6c;
+  box-shadow: 2px 5px 2px lightgrey;
+  color: #faf7f0;
+  border: none;
+  border-radius: 5px;
+  padding: 2%;
+  font-size: 1em;
+}
+
+#Warning {
+  background-color: white;
+  padding: 2%;
+}
+/* Classes */
+.check {
+  margin-left: 1%;
+  float: right;
+  background-color: #54b435;
+  color: #f7e2d6;
+  border: none;
+  border-radius: 10px;
+  padding: 2%;
+}
+.trash {
+  float: right;
+  background-color: #ff1e1e;
+  color: #f7e2d6;
+  border: none;
+  border-radius: 10px;
+  padding: 2%;
+}
+.fa-dumpster-fire {
+  pointer-events: none;
+}
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.display {
+  display: inline;
+  box-shadow: 2px 5px #000000;
+  transition: 1s;
+}
+/* darkmode  changes the app to correspond when darkmode is enabled*/
+.darkBody {
+  background-color: #000000;
+  color: #b3ffae;
+}
+.darkBody #app {
+  box-shadow: 8px 8px 5px #1b2430;
+}
+.darkBody input {
+  background-color: inherit;
+  color: white;
+}
+.darkBody #Warning {
+  background-color: inherit;
+}
+.darkBody #clear {
+  background-color: #b3ffae;
+  box-shadow: inherit;
+  color: #000000;
+}
+.darkBody #submit {
+  background-color: #b3ffae;
+  box-shadow: inherit;
+  color: #000000;
+}
+
+.darkBody input {
+  border: 1px solid #14c38e;
+}
+.darkBody li {
+  box-shadow: inherit;
+}
+/* Mobile CSS */
+@media (max-width: 900px) {
+  #app {
+    width: 70%;
+  }
+  input {
+    width: 50%;
+  }
+}
